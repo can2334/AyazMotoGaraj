@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; 
+import { Inter } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppChat from "./components/WhatsAppChat";
 import './globals.css';
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// Yazı tipini projenin ruhuna uygun (modern ve temiz) ayarlıyoruz
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,19 +24,14 @@ export default function RootLayout({
   return (
     <html lang="tr" className="scroll-smooth">
       <body className={`${inter.className} bg-[#0A0A0A] text-white antialiased selection:bg-red-600 selection:text-white`}>
-        {/* Navigasyon */}
         <Header />
-
-        {/* Sayfa İçerikleri */}
         <main className="min-h-screen">
           {children}
         </main>
-
-        {/* Sabit Araçlar */}
         <WhatsAppChat />
-
-        {/* Alt Bilgi */}
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
