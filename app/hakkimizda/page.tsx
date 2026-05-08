@@ -42,6 +42,22 @@ const ekip = [
         biyografi:
             'Vedat Usta, nam-ı diğer <span class="text-white font-bold">Tek Teker Vedat</span>, motosiklet tutkusu ve ustalığıyla tanınan, Ankara\'nın sevilen ve güven duyulan tamircilerinden biridir.',
     },
+    {
+        foto: "/",
+        isim: "",
+        unvan: "",
+        yil: "",
+        biyografi:
+            '',
+    },
+    {
+        foto: "/",
+        isim: "",
+        unvan: "",
+        yil: "",
+        biyografi:
+            '',
+    },
     // Örnek — eklediğinde grid otomatik düzenlenir:
     // {
     //     foto: "/ahmet.jpg",
