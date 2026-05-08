@@ -6,6 +6,7 @@ import WhatsAppChat from "./components/WhatsAppChat";
 import './globals.css';
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,10 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
+        <Script
+          src="https://elfsightcdn.com/platform.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

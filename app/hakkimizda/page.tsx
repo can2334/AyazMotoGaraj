@@ -37,18 +37,18 @@ const ekip = [
     {
         foto: "/halil.jpeg",
         isim: "HALİL",
-        unvan: "",
-        yil: "10+",
+        unvan: "Usta Çırak",
+        yil: "1+",
         biyografi:
-            'Vedat Usta, nam-ı diğer <span class="text-white font-bold">Tek Teker Vedat</span>, motosiklet tutkusu ve ustalığıyla tanınan, Ankara\'nın sevilen ve güven duyulan tamircilerinden biridir.',
+            'xx',
     },
     {
-        foto: "/",
-        isim: "",
-        unvan: "",
-        yil: "",
+        foto: "/berk.jpeg",
+        isim: "BERK",
+        unvan: "Usta Çırak",
+        yil: "1+",
         biyografi:
-            '',
+            'xx',
     },
     {
         foto: "/",

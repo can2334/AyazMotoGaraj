@@ -19,7 +19,7 @@ const navLinks = [
     { label: "HİZMETLER", icon: Wrench, href: "hizmetler" },
     { label: "HAKKIMIZDA", icon: Info, href: "hakkimizda" },
     { label: "ÇEKİCİ", icon: Truck, href: "" },
-    { label: "YORUMLAR", icon: Star, href: "#" },
+    { label: "YORUMLAR", icon: Star, href: "yorumlar" },
     { label: "İLETİŞİM", icon: MapPin, href: "iletisim" },
 ];
 
@@ -32,9 +32,12 @@ export default function Header() {
             <div className="flex items-center justify-between px-6 lg:px-10 bg-black/80 backdrop-blur-md border-b border-white/5 h-[68px]">
                 {/* Logo */}
                 <div className="flex items-center gap-3">
-                    <div className="bg-red-600 w-11 h-11 rounded-lg flex items-center justify-center">
-                        <Settings2 className="w-5 h-5 text-white" />
-                    </div>
+                    <img
+                        src="/logo.png"
+                        alt="Ayaz Moto Garaj Logo"
+                        className="w-12 h-12 object-contain"
+                    />
+
                     <div>
                         <h1
                             className="font-black text-xl leading-none text-white"
@@ -42,10 +45,12 @@ export default function Header() {
                         >
                             AYAZ MOTO
                         </h1>
-                        <p className="text-[9px] text-red-500 tracking-[0.3em] font-bold mt-0.5">GARAJ &amp; SERVİS</p>
+
+                        <p className="text-[9px] text-red-500 tracking-[0.3em] font-bold mt-0.5">
+                            GARAJ &amp; SERVİS
+                        </p>
                     </div>
                 </div>
-
                 {/* Nav - desktop */}
                 <nav className="hidden md:flex items-center gap-1">
                     {navLinks.map((item) => (
