@@ -27,3 +27,18 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #ef4444;
 }
+
+/* ELFSIGHT CUSTOM FIX */
+
+.elfsight-app-fd7b50fd-cf48-4275-a491-5060ffc95600 {
+  width: 100%;
+}
+
+.elfsight-app-fd7b50fd-cf48-4275-a491-5060ffc95600 iframe {
+  border-radius: 24px !important;
+  margin-bottom: -55px !important;
+}
+
+.eapps-widget-toolbar {
+  display: none !important;
+}
