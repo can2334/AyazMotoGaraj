@@ -137,12 +137,21 @@ export default function HomePage() {
                         <div className="absolute w-[420px] h-[420px] border border-white/[0.025] rounded-full animate-[spin_60s_linear_infinite]" />
                         <div className="absolute w-[520px] h-[520px] border border-red-600/5 rounded-full animate-[spin_90s_linear_infinite_reverse]" />
 
-                        <div className="relative z-10 bg-[#0F0F0F] border border-red-600/40 p-14 rounded-3xl shadow-2xl shadow-red-600/10 flex flex-col items-center gap-5">
-                            <Settings className="w-14 h-14 text-red-600 animate-[spin_8s_linear_infinite]" />
-                            <div className="text-center">
-                                <h2 className="font-black text-3xl tracking-tighter leading-none">AYAZ MOTO</h2>
-                                <p className="text-xs text-red-600 tracking-[0.4em] mt-1 uppercase">GARAJ</p>
+                        <div className="relative z-10 bg-[#0F0F0F] border border-red-600/40 p-6 rounded-full shadow-[0_0_50px_rgba(220,38,38,0.15)] flex items-center justify-center group">
+                            {/* Arka Plan Parlama Efekti */}
+                            <div className="absolute inset-0 bg-red-600/10 blur-3xl rounded-full animate-pulse group-hover:bg-red-600/25 transition-all duration-700" />
+
+                            {/* Daha Büyük Yuvarlak Logo Container */}
+                            <div className="relative w-48 h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-2 border-red-600/30 bg-black/50">
+                                <img
+                                    src="/logo.png"
+                                    alt="Ayaz Moto Garaj"
+                                    className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
+                                />
                             </div>
+
+                            {/* Dış Çember Efekti (Opsiyonel: Daha mekanik durması için) */}
+                            <div className="absolute inset-0 rounded-full border border-white/5 pointer-events-none" />
                         </div>
 
                         <div className="absolute top-12 right-4 lg:-right-4 bg-neutral-900/90 backdrop-blur border border-white/10 px-3 py-2 rounded-xl flex items-center gap-2 animate-[bounce_4s_ease-in-out_infinite]">
