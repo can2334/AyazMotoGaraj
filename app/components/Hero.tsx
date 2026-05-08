@@ -21,6 +21,7 @@ import {
     Check,
 } from "lucide-react";
 import { useEffect } from "react";
+import PageSEO from "./PageSEO";
 
 /* ─────────────────── DATA ─────────────────── */
 const stats = [
@@ -65,9 +66,7 @@ export default function HomePage() {
 
     return (
         <>
-            {/* ═══════════════════════════════════════
-          HERO
-      ═══════════════════════════════════════ */}
+            <PageSEO title="AnaSayfa" />
             <section className="relative overflow-hidden bg-[#0A0A0A] min-h-screen flex flex-col">
                 {/* Background lines */}
                 {[...Array(6)].map((_, i) => (

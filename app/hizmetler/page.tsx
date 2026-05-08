@@ -12,6 +12,7 @@ import {
     ArrowRight,
     MessageCircle
 } from "lucide-react";
+import PageSEO from '../components/PageSEO';
 
 const services = [
     {
@@ -67,6 +68,7 @@ export default function ServicesPage() {
 
     return (
         <main className="bg-[#050505] min-h-screen text-white pb-20">
+            <PageSEO title="Hizmetlerimiz" />
             {/* ÜST HEADER ALANI */}
             <section className="relative pt-32 pb-20 overflow-hidden border-b border-white/5">
                 <div className="absolute inset-0 bg-red-600/5 blur-[120px] rounded-full -top-24 -left-24 pointer-events-none" />

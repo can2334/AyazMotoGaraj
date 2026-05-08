@@ -18,6 +18,7 @@ const serviceLinks = [
     "Yağ Değişimi",
     "Motor Çekici",
 ];
+const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/Eexv9BA99b2EF26EA";
 
 const socials = [
     {
@@ -154,7 +155,9 @@ export default function Footer() {
                             </div>
                             <div>
                                 <p className="text-[10px] text-neutral-600 uppercase tracking-wider font-bold mb-0.5">Adres</p>
-                                <p className="text-neutral-400 text-sm">Ankara, Türkiye</p>
+                                <a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="text-neutral-400 text-sm hover:text-white transition-colors">
+                                    Çağlayan, Tıp Fakültesi Cd. 210/a, 06260 Mamak/Ankara
+                                </a>
                             </div>
                         </li>
                         <li className="flex items-start gap-4">
