@@ -34,11 +34,10 @@ function IconInstagram({ className }: { className?: string }) {
     );
 }
 
-function IconYoutube({ className }: { className?: string }) {
+function IconTikTok({ className }: { className?: string }) {
     return (
-        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
-            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+        <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
         </svg>
     );
 }
@@ -210,11 +209,21 @@ export default function IletisimPage() {
                         <div className="mt-6 bg-[#0D0D0D] border border-white/5 px-6 py-4 rounded-2xl flex items-center gap-6">
                             <span className="text-[10px] font-black text-neutral-600 uppercase tracking-[0.2em] shrink-0">Sosyal Medya</span>
                             <div className="h-px flex-1 bg-white/5" />
-                            <a href="#" className="p-2 rounded-lg hover:bg-white/5 text-neutral-500 hover:text-pink-500 transition-all">
+                            <a
+                                href="https://www.instagram.com/ayazmotogaraj"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 rounded-lg hover:bg-white/5 text-neutral-500 hover:text-pink-500 transition-all"
+                            >
                                 <IconInstagram className="w-5 h-5" />
                             </a>
-                            <a href="#" className="p-2 rounded-lg hover:bg-white/5 text-neutral-500 hover:text-red-500 transition-all">
-                                <IconYoutube className="w-5 h-5" />
+                            <a
+                                href="https://www.tiktok.com/@ayaz.moto.garaj"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 rounded-lg hover:bg-white/5 text-neutral-500 hover:text-white transition-all"
+                            >
+                                <IconTikTok className="w-5 h-5" />
                             </a>
                         </div>
                     </div>
